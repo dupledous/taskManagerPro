@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskmanager.css">
+    <title>TaskManagerPro</title>
+</head>
+<body>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter a new task" required>
+        <label for="time">Start Time:</label>
+        <input type="datetime-local" id="time" placeholder="hora inicio" required>
+
+        <label for="time2">End Time:</label>
+        <input type="datetime-local" id="time2" placeholder="hora fin" required>
+
+        <label for="repetir tarea">Repeat Task:</label>
+        <select id="repetir tarea">
+            <option value="no repetir">No Repeat</option>
+            <option value="diariamente">Daily</option>
+            <option value="semanalmente">Weekly</option>
+            <option value="mensualmente">Monthly</option>
+        </select>
+        <button type="submit" id="addTaskButton">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    
+</body>
+<script src="taskmanager.js"></script>
+</html>
